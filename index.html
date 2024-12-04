@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BODMAS Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Start Screen -->
+    <div class="start-screen">
+      <h1>BODMAS Game</h1>
+      <button id="one-player-button" class="btn-box">Single Player Mode</button>
+      <button id="two-player-button" class="btn-box">Two Player Mode</button>
+    </div>
+
+    <!-- Single Player Mode -->
+    <div class="game hidden" id="game">
+      <button class="close-btn" id="close-one-player">X</button>
+      <h1>Single Player Game</h1>
+      <p id="question"></p>
+      <input type="text" id="answer" placeholder="Your Answer">
+      <button id="submit">Submit</button>
+      <p id="message"></p>
+      <div class="score">
+        <p>Score: <span id="score">0</span></p>
+        <button id="reset" class="btn-box">Reset</button>
+      </div>
+    </div>
+
+    <!-- Two Player Mode -->
+    <div class="game-2p hidden" id="game-2p">
+      <button class="close-btn" id="close-two-player">X</button>
+      <h1>Double Player Mode</h1>
+
+      <!-- Player 1 -->
+      <div class="player" id="player-1">
+        <h3>Player 1</h3>
+        <p id="question-1"></p>
+        <input type="text" id="answer-1" placeholder="Your Answer">
+        <button id="submit-1">Submit</button>
+        <p id="message-1"></p>
+        <div class="score">
+          <p>Score: <span id="score-1">0</span></p>
+        </div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="player" id="player-2">
+        <h3>Player 2</h3>
+        <p id="question-2"></p>
+        <input type="text" id="answer-2" placeholder="Your Answer">
+        <button id="submit-2">Submit</button>
+        <p id="message-2"></p>
+        <div class="score">
+          <p>Score: <span id="score-2">0</span></p>
+        </div>
+      </div>
+
+      <button id="reset-2p" class="btn-box">Reset Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
